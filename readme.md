@@ -9,7 +9,7 @@
 - Given all the fancy modern tools and technologies. How is that possible? 
 
     - This is because a better hammer does not make you a professional builder. And using a popular library doesn't mean one can create large, high quality frameworks. 
-
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/Chapter5Slide3.png)
 #### This overview will show you how to keep your test framework clean professional and maintainable. 
 #### Overview
 - Review popular techniques being applied when building frameworks
@@ -19,11 +19,12 @@
 - This will allow us to proceed to the next step: 
     - Split our single module framework to a multi module framework. 
     - Build a foundation upon which you can scale to hundreds or thousands of tests
-  
+ 
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/Chapter5Slide5.png) 
 * If you have written unit, integration, or system test before you know that a lot of test can be generated
   and become difficult to maintain. 
-
-[Image]
+  
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/Chapter5Slide6.png)
 
 * As you write more test, hopefully, you applied the best techniques discusses in most courses such as:
   * Refactor setup and clenup code in separate methods that that with @BeforeXXX and @AfterXXX depending on the libraries you use
@@ -33,7 +34,7 @@
 
 #### Your biggest Enemies
 
-[Image]
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/Chapter5Slide7.png)
 
 * Abuse of Inheritance
   * Code becomes really inflexible
