@@ -1,5 +1,7 @@
-### Web Api Tests Using Configuration Loader
-* Add api_config.properties to the root of the project
+### Project Setup
+- Clone this repo into a current directory to get the modularized sample of a JUnit Framework
+- To get a version that is not separated into different modules go to:
+[https://github.com/yelenagotraining/JavaAutomationFrameworkNoModules](https://github.com/yelenagotraining/JavaAutomationFrameworkNoModules)
 
 ### Evolving into a multi-module test framework
 
