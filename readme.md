@@ -4,6 +4,7 @@
 ### Evolving into a multi-module test framework
 
 - This topic is unique because iI've seen a lot of courses on how to build a UI, WebAPI, or any other kinds of tests using various tools and technologies. I've also seen a lot of automation test code bases that are fairly messy and difficult to extend and maintain. 
+![](https://github.com/AAInternal/TestAutomationStrategy/blob/master/img/AutomationFrameworkFromScratch/Chapter5Slide2.png)
 
 - Given all the fancy modern tools and technologies. How is that possible? 
 
