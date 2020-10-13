@@ -97,7 +97,8 @@ of the system:
 * God class is described as follows:
  - If you want your banana, you'll get your banana, but you will also get the animal that is holding it. 
  Along with a jungle it lives in. 
-[Chapter5Image12]
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/Chapter5Slide12.png)
+
 - What if you don't want any of the extra stuff?
 
 ### Replace Inheritance with Composition 
@@ -106,15 +107,16 @@ of the system:
 * For example:
     * Savings account IS-A account vs Person HAS-A Account
 
-[Chapter5Slide15]
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/Chapter5Slide15.png)
+)
 
 * The logic with tests is a bit different. Base class should only extend to run setup and clenup.
   For most other thing a test  HAS-A piece of functionality.
 * Test should have a functionality by statically importing it or by creating a helper object.
-[Chapter5Slide16]
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/Chapter5Slide16.png)
 * We create two separate classes, one for String Utils and one for Properties Utils
 
-[Chapter5Slide17]
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/Chapter5Slide17.png)
  
  
 
