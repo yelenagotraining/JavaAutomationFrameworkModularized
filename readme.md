@@ -63,7 +63,8 @@ of the system:
 > It's importnat to remember that we must avoid duplication by moving common classes into a higher common class. 
 ![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/FrameWorkHierarchyBefore.png)
 
-> First Bad Solution:
+> First Bad Solution - Extending base class:
+
 * For example, we want to use string generator in our API and UI tests.
     * Also, we went to use our properties in both set of tests
 * First bad solution is to use inheritance to solve this problem. 
@@ -72,18 +73,53 @@ of the system:
 * First bad solution is to use inheritence 
     * Our API tests do not extend any parent classes, at the moment
     One option is for one class to extend the other. 
-    ![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/FrameWorkUseInheritance.png)
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/FrameWorkUseInheritance.png)
     * The side effect of this is we are mixing this that should be not be mixed
     * With inheritence we create Is-A relationship 
     * Inherit unwatned UI Code including set up and cleanup. 
-    ![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/FrameworkIsARelationship.png)
-> Second Bad Solution
+![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/FrameworkIsARelationship.png)
+
+#### Second Bad Solution - Inheretance Hierarchy
+
 * Make a parent class on top of other classes
 
 * This is a bad idea because we are creating one monolith class. 
     * The structure is going to higher and higher and all the functionality is going to get pulled up.
 ![](https://github.com/yelenagou/AutomationStrategyImages/blob/main/img/AutomationFrameworkFromScratch/FrameworkHirerarchy.png)
+    
     * Pulling all the functionality in the top most class will create something called a God Class
-    * God Clas: a class that knows too much or does too much. It is connected to way too many other classes and has grown
-    beyon all logic. 
+
+#### No to God Class
+* God Class: a class which knows too much or does too much. 
+* God Class connected to way too many other classes and has grown
+    beyond all logic. 
+    
+* God class is described as follows:
+ - If you want your banana, you'll get your banana, but you will also get the animal that is holding it. 
+ Along with a jungle it lives in. 
+[Chapter5Image12]
+- What if you don't want any of the extra stuff?
+
+### Replace Inheritance with Composition 
+- To achieve composition you must establish a HAS-A relationship vs IS-A relationship
+- With traditional OO software you establish logical relationship
+* For example:
+    * Savings account IS-A account vs Person HAS-A Account
+
+[Chapter5Slide15]
+
+* The logic with tests is a bit different. Base class should only extend to run setup and clenup.
+  For most other thing a test  HAS-A piece of functionality.
+* Test should have a functionality by statically importing it or by creating a helper object.
+[Chapter5Slide16]
+* We create two separate classes, one for String Utils and one for Properties Utils
+
+[Chapter5Slide17]
+ 
+ 
+
+
+
+
+
     
